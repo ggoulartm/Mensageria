@@ -1,6 +1,4 @@
 from tkinter import *
-from datetime import datetime
-from Consumer import *
 import os
 
 def console_consumer(topic):
@@ -36,6 +34,15 @@ for element in vehicleEvents:
 
 lb_events.pack()
 
+
+functions = ["analise", "armazenamento", "exibicao"]
+
+lb_functions=Listbox(app,height = 3)
+
+for element in functions:
+	lb_functions.insert(END, element)
+	
+lb_functions.pack()
 
 
 
