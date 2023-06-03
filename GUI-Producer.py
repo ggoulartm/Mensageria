@@ -1,20 +1,21 @@
 from tkinter import *
 from datetime import datetime
-import Producer
+from Producer import *
+import os
 
 start_server()
 
 def Publisher():
     datahora=datetime.now().strftime('%d/%m/%Y %H:%M')
-    evento=str(lb_events.get(ACTIVE)
+    evento=str(lb_events.get(ACTIVE))
     valor=vValor.get()
-    print("Evento: "+evento))
+    print("Evento: "+evento)
     print("Valor: "+valor)
     print("Horario: "+datahora)
     if evento == "Velocidade do veiculo":
     	console_producer("velocidade",valor)
     elif evento == "RPM do motor":
-    	console_producer(rpm,valor)
+    	console_producer("rpm",valor)
     elif evento == "Temperatura do motor":
     	console_producer("temperatura",valor)
     elif evento == "Nivel de combustivel":
