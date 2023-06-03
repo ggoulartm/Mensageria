@@ -1,6 +1,6 @@
 # Diagrama de Blocos
 
-![Diagrama de Blocos](/ggoulart/Mensageria/Diagrama_de_Blocos.png)
+![Diagrama de Blocos](/Diagrama_de_blocos.png)
 
 
 # Diretrizes para cada etapa:
