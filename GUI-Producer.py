@@ -3,7 +3,7 @@ from datetime import datetime
 from Producer import *
 import os
 
-start_server()
+#start_server()
 
 def Publisher():
     datahora=datetime.now().strftime('%d/%m/%Y %H:%M')
@@ -13,17 +13,17 @@ def Publisher():
     print("Valor: "+valor)
     print("Horario: "+datahora)
     if evento == "Velocidade do veiculo":
-    	console_producer("velocidade",valor)
+    	console_producer("velocidade",evento,valor,datahora)
     elif evento == "RPM do motor":
-    	console_producer("rpm",valor)
+    	console_producer("rpm",evento,valor,datahora)
     elif evento == "Temperatura do motor":
-    	console_producer("temperatura",valor)
+    	console_producer("temperatura",evento,valor,datahora)
     elif evento == "Nivel de combustivel":
-    	console_producer("nivel-combustivel",valor)
+    	console_producer("nivel-combustivel",evento,valor,datahora)
     elif evento == "Localizacao GPS":
-    	console_producer("GPS",valor)
+    	console_producer("GPS",evento,valor,datahora)
     else:
-    	console_producer("status-luzes",valor)
+    	console_producer("status-luzes",evento,valor,datahora)
     
 
 app = Tk()
@@ -48,6 +48,9 @@ vValor.place(x=10,y=120,width=200,height=20)
 
 publicar=Button(app,text="Publicar",command=Publisher)
 publicar.place(x=100,y=145,width=50,height=20)
+
+clear=Button(app,text="limpar",command=clear_topics)
+clear.place(x=155,y=145,width=50,height=20)
 
 
 app.mainloop()
