@@ -1,3 +1,4 @@
+"""
 from confluent_kafka import Consumer
 
 
@@ -46,3 +47,8 @@ if __name__ == '__main__':
     finally:
         print("Leave group and commit final offsets")
         consumer.close()
+"""
+
+def console-consumer(topic):
+	os.system("bin/kafka-console-consumer.sh --topic "+topic+" --from-beginning --bootstrap-server localhost:9092")
+

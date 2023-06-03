@@ -1,12 +1,28 @@
 from tkinter import *
 from datetime import datetime
+import Producer
+
+start_server()
 
 def Publisher():
     datahora=datetime.now().strftime('%d/%m/%Y %H:%M')
-    print("Evento: "+str(lb_events.get(ACTIVE)))
+    evento=str(lb_events.get(ACTIVE)
+    print("Evento: "+evento))
     print("Valor: "+vValor.get())
     print("Horario: "+datahora)
-#acionar kafka
+    if evento == "Velocidade do veiculo":
+    	console_producer("velocidade")
+    elif evento == "RPM do motor":
+    	console_producer(rpm)
+    elif evento == "Temperatura do motor":
+    	console_producer("temperatura")
+    elif evento == "Nivel de combustivel":
+    	console_producer("nivel-combustivel")
+    elif evento == "Localizacao GPS":
+    	console_producer("GPS")
+    else:
+    	console_producer("status-luzes")
+    
 
 app = Tk()
 app.title("TMR Veicular")

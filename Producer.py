@@ -1,4 +1,4 @@
-from confluent_kafka import Producer, KafkaError  
+"""from confluent_kafka import Producer, KafkaError  
   
 if __name__ == '__main__':  
   
@@ -42,3 +42,23 @@ if __name__ == '__main__':
 
   producer.flush()  
   print("{} messages were produced to topic {}!".format(delivered_records, topic))
+  """
+  
+def start_server():
+	import os
+	from time import sleep
+	os.system("bin/zookeeper-server-start.sh config/zookeeper.properties &")
+	os.system("bin/kafka-server-start.sh config/server.properties &")
+	sleep 60
+	os.system("bin/kafka-topics.sh --create --topic velocidade --bootstrap-server localhost:9092")
+	os.system("bin/kafka-topics.sh --create --topic rpm --bootstrap-server localhost:9092")
+	os.system("bin/kafka-topics.sh --create --topic temperatura --bootstrap-server localhost:9092")
+	os.system("bin/kafka-topics.sh --create --topic nivel-combustivel --bootstrap-server localhost:9092")
+	os.system("bin/kafka-topics.sh --create --topic quilometragem --bootstrap-server localhost:9092")
+	os.system("bin/kafka-topics.sh --create --topic GPS --bootstrap-server localhost:9092")
+	os.system("bin/kafka-topics.sh --create --topic status-luzes --bootstrap-server localhost:9092")
+
+def console_producer(topic):
+	os.system("bin/kafka-console-producer.sh --topic "+topic+" --bootstrap-server localhost:9092"
+	
+
