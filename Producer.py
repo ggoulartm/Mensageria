@@ -47,18 +47,18 @@ if __name__ == '__main__':
 def start_server():
 	import os
 	from time import sleep
-	os.system("bin/zookeeper-server-start.sh config/zookeeper.properties &")
-	os.system("bin/kafka-server-start.sh config/server.properties &")
+	os.system("kafka_2.13-3.4.0/bin/zookeeper-server-start.sh config/zookeeper.properties &")
+	os.system("kafka_2.13-3.4.0/bin/kafka-server-start.sh config/server.properties &")
 	sleep 60
-	os.system("bin/kafka-topics.sh --create --topic velocidade --bootstrap-server localhost:9092")
-	os.system("bin/kafka-topics.sh --create --topic rpm --bootstrap-server localhost:9092")
-	os.system("bin/kafka-topics.sh --create --topic temperatura --bootstrap-server localhost:9092")
-	os.system("bin/kafka-topics.sh --create --topic nivel-combustivel --bootstrap-server localhost:9092")
-	os.system("bin/kafka-topics.sh --create --topic quilometragem --bootstrap-server localhost:9092")
-	os.system("bin/kafka-topics.sh --create --topic GPS --bootstrap-server localhost:9092")
-	os.system("bin/kafka-topics.sh --create --topic status-luzes --bootstrap-server localhost:9092")
+	os.system("kafka_2.13-3.4.0/bin/kafka-topics.sh --create --topic velocidade --bootstrap-server localhost:9092")
+	os.system("kafka_2.13-3.4.0/bin/kafka-topics.sh --create --topic rpm --bootstrap-server localhost:9092")
+	os.system("kafka_2.13-3.4.0/bin/kafka-topics.sh --create --topic temperatura --bootstrap-server localhost:9092")
+	os.system("kafka_2.13-3.4.0/bin/kafka-topics.sh --create --topic nivel-combustivel --bootstrap-server localhost:9092")
+	os.system("kafka_2.13-3.4.0/bin/kafka-topics.sh --create --topic quilometragem --bootstrap-server localhost:9092")
+	os.system("kafka_2.13-3.4.0/bin/kafka-topics.sh --create --topic GPS --bootstrap-server localhost:9092")
+	os.system("kafka_2.13-3.4.0/bin/kafka-topics.sh --create --topic status-luzes --bootstrap-server localhost:9092")
 
-def console_producer(topic):
-	os.system("bin/kafka-console-producer.sh --topic "+topic+" --bootstrap-server localhost:9092"
+def console_producer(topic,value):
+	os.system("echo "+str(value)+" kafka_2.13-3.4.0/bin/kafka-console-producer.sh --topic "+topic+" --bootstrap-server localhost:9092")
 	
 

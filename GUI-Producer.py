@@ -7,21 +7,22 @@ start_server()
 def Publisher():
     datahora=datetime.now().strftime('%d/%m/%Y %H:%M')
     evento=str(lb_events.get(ACTIVE)
+    valor=vValor.get()
     print("Evento: "+evento))
-    print("Valor: "+vValor.get())
+    print("Valor: "+valor)
     print("Horario: "+datahora)
     if evento == "Velocidade do veiculo":
-    	console_producer("velocidade")
+    	console_producer("velocidade",valor)
     elif evento == "RPM do motor":
-    	console_producer(rpm)
+    	console_producer(rpm,valor)
     elif evento == "Temperatura do motor":
-    	console_producer("temperatura")
+    	console_producer("temperatura",valor)
     elif evento == "Nivel de combustivel":
-    	console_producer("nivel-combustivel")
+    	console_producer("nivel-combustivel",valor)
     elif evento == "Localizacao GPS":
-    	console_producer("GPS")
+    	console_producer("GPS",valor)
     else:
-    	console_producer("status-luzes")
+    	console_producer("status-luzes",valor)
     
 
 app = Tk()

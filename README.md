@@ -49,5 +49,5 @@ Processar as mensagens de acordo com as necessidades do projeto, como análise, 
 
 O sistema deve permitir o envio e recebimento de dados em tempo real, usando o Kafka como plataforma de streaming de dados.
 
-Implementarma interface gráfica (GUI) para monitorar o tráfego de informações.
+Implementar uma interface gráfica (GUI) para monitorar o tráfego de informações.
 A interface deve permitir visualizar os eventos de telemetria em tempo real, realizar consultas e exibir métricas relevantes.

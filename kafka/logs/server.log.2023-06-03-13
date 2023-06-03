@@ -1,0 +1,708 @@
+[2023-06-03 14:01:22,632] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2023-06-03 14:01:23,184] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+[2023-06-03 14:01:23,383] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:01:23,387] INFO starting (kafka.server.KafkaServer)
+[2023-06-03 14:01:23,387] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2023-06-03 14:01:23,445] INFO [ZooKeeperClient Kafka server] Initializing a new session to localhost:2181. (kafka.zookeeper.ZooKeeperClient)
+[2023-06-03 14:01:23,464] INFO Client environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,464] INFO Client environment:host.name=host1.test.com (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,464] INFO Client environment:java.version=11.0.19 (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,464] INFO Client environment:java.vendor=Ubuntu (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,465] INFO Client environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64 (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,465] INFO Client environment:java.class.path=/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/activation-1.1.1.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/argparse4j-0.7.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/audience-annotations-0.5.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/commons-cli-1.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/commons-lang3-3.8.1.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/connect-api-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/connect-basic-auth-extension-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/connect-json-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/connect-mirror-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/connect-mirror-client-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/connect-runtime-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/connect-transforms-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/hk2-api-2.6.1.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/hk2-locator-2.6.1.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/hk2-utils-2.6.1.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jackson-annotations-2.13.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jackson-core-2.13.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jackson-databind-2.13.4.2.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jackson-dataformat-csv-2.13.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jackson-datatype-jdk8-2.13.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jackson-jaxrs-base-2.13.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jackson-jaxrs-json-provider-2.13.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jackson-module-jaxb-annotations-2.13.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jackson-module-scala_2.13-2.13.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jakarta.inject-2.6.1.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/javassist-3.27.0-GA.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/javax.annotation-api-1.3.2.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jaxb-api-2.3.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jersey-client-2.34.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jersey-common-2.34.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jersey-container-servlet-2.34.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jersey-container-servlet-core-2.34.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jersey-hk2-2.34.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jersey-server-2.34.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jetty-client-9.4.48.v20220622.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jetty-continuation-9.4.48.v20220622.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jetty-http-9.4.48.v20220622.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jetty-io-9.4.48.v20220622.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jetty-security-9.4.48.v20220622.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jetty-server-9.4.48.v20220622.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jetty-servlet-9.4.48.v20220622.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jetty-servlets-9.4.48.v20220622.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jetty-util-9.4.48.v20220622.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jetty-util-ajax-9.4.48.v20220622.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jline-3.21.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jopt-simple-5.0.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/jose4j-0.7.9.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka_2.13-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-clients-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-group-coordinator-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-log4j-appender-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-metadata-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-raft-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-server-common-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-shell-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-storage-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-storage-api-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-streams-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-streams-examples-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-streams-scala_2.13-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-streams-test-utils-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/kafka-tools-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/lz4-java-1.8.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/maven-artifact-3.8.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/metrics-core-2.2.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/metrics-core-4.1.12.1.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/netty-buffer-4.1.78.Final.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/netty-codec-4.1.78.Final.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/netty-common-4.1.78.Final.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/netty-handler-4.1.78.Final.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/netty-resolver-4.1.78.Final.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/netty-transport-4.1.78.Final.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/netty-transport-classes-epoll-4.1.78.Final.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/netty-transport-native-epoll-4.1.78.Final.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/netty-transport-native-unix-common-4.1.78.Final.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/paranamer-2.8.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/plexus-utils-3.3.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/reflections-0.9.12.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/reload4j-1.2.19.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/rocksdbjni-7.1.2.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/scala-collection-compat_2.13-2.6.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/scala-library-2.13.10.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/scala-reflect-2.13.10.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/slf4j-api-1.7.36.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/snappy-java-1.1.8.4.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/swagger-annotations-2.2.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/trogdor-3.4.0.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/zookeeper-3.6.3.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/zookeeper-jute-3.6.3.jar:/home/ggmuller/Telemetria.Python.Kafka/kafka_2.13-3.4.0/bin/../libs/zstd-jni-1.5.2-1.jar (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,465] INFO Client environment:java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,465] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,465] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,465] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,465] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,466] INFO Client environment:os.version=5.19.0-42-generic (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,466] INFO Client environment:user.name=ggmuller (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,466] INFO Client environment:user.home=/home/ggmuller (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,466] INFO Client environment:user.dir=/home/ggmuller/Telemetria.Python.Kafka (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,466] INFO Client environment:os.memory.free=1014MB (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,466] INFO Client environment:os.memory.max=1024MB (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,466] INFO Client environment:os.memory.total=1024MB (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,471] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=18000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@609bcfb6 (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:01:23,482] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+[2023-06-03 14:01:23,495] INFO zookeeper.request.timeout value is 0. feature enabled=false (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:01:23,501] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2023-06-03 14:01:23,502] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:01:23,517] INFO Socket connection established, initiating session, client: /127.0.0.1:51208, server: localhost/127.0.0.1:2181 (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:01:23,553] INFO Session establishment complete on server localhost/127.0.0.1:2181, session id = 0x10000d991c20000, negotiated timeout = 18000 (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:01:23,560] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2023-06-03 14:01:24,027] INFO Cluster ID = UOR1zp6IS_uhQz12EFLCKQ (kafka.server.KafkaServer)
+[2023-06-03 14:01:24,139] INFO KafkaConfig values: 
+	advertised.listeners = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = false
+	auto.include.jmx.reporter = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.listener.names = null
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 1000
+	controller.quorum.fetch.timeout.ms = 2000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = []
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 3.4-IV0
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = PLAINTEXT://:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1048588
+	metadata.log.dir = null
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.max.snapshot.interval.ms = 3600000
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = 104857600
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 0
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = []
+	producer.id.expiration.check.interval.ms = 600000
+	producer.id.expiration.ms = 86400000
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.manager.class.name = null
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = null
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = null
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 18000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.metadata.migration.enable = false
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+ (kafka.server.KafkaConfig)
+[2023-06-03 14:01:24,236] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:01:24,236] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:01:24,236] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:01:24,244] INFO [ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:01:24,357] INFO Loading logs from log dirs ArraySeq(/tmp/kafka-logs) (kafka.log.LogManager)
+[2023-06-03 14:01:24,366] INFO Skipping recovery for all logs in /tmp/kafka-logs since clean shutdown file was found (kafka.log.LogManager)
+[2023-06-03 14:01:24,401] INFO Loaded 0 logs in 43ms. (kafka.log.LogManager)
+[2023-06-03 14:01:24,403] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2023-06-03 14:01:24,409] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2023-06-03 14:01:24,619] INFO [feature-zk-node-event-process-thread]: Starting (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2023-06-03 14:01:24,665] INFO [MetadataCache brokerId=0] Updated cache from existing <empty> to latest FinalizedFeaturesAndEpoch(features=Map(), epoch=0). (kafka.server.metadata.ZkMetadataCache)
+[2023-06-03 14:01:24,714] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Starting (kafka.server.BrokerToControllerRequestThread)
+[2023-06-03 14:01:25,584] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2023-06-03 14:01:25,595] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.DataPlaneAcceptor)
+[2023-06-03 14:01:25,649] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Created data-plane acceptor and processors for endpoint : ListenerName(PLAINTEXT) (kafka.network.SocketServer)
+[2023-06-03 14:01:25,661] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Starting (kafka.server.BrokerToControllerRequestThread)
+[2023-06-03 14:01:25,717] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:01:25,726] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:01:25,726] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:01:25,753] INFO [ExpirationReaper-0-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:01:25,811] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2023-06-03 14:01:25,898] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.zk.KafkaZkClient)
+[2023-06-03 14:01:25,949] INFO Stat of the created znode at /brokers/ids/0 is: 46,46,1685811685927,1685811685927,1,0,0,72058528491241472,212,0,46
+ (kafka.zk.KafkaZkClient)
+[2023-06-03 14:01:25,951] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT://host1.test.com:9092, czxid (broker epoch): 46 (kafka.zk.KafkaZkClient)
+[2023-06-03 14:01:26,084] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:01:26,107] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:01:26,109] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:01:26,157] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2023-06-03 14:01:26,183] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2023-06-03 14:01:26,235] INFO [TransactionCoordinator id=0] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2023-06-03 14:01:26,248] INFO [TransactionCoordinator id=0] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2023-06-03 14:01:26,269] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2023-06-03 14:01:26,396] INFO [ExpirationReaper-0-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:01:26,461] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2023-06-03 14:01:26,514] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Enabling request processing. (kafka.network.SocketServer)
+[2023-06-03 14:01:26,540] INFO Kafka version: 3.4.0 (org.apache.kafka.common.utils.AppInfoParser)
+[2023-06-03 14:01:26,541] INFO Kafka commitId: 2e1947d240607d53 (org.apache.kafka.common.utils.AppInfoParser)
+[2023-06-03 14:01:26,541] INFO Kafka startTimeMs: 1685811686526 (org.apache.kafka.common.utils.AppInfoParser)
+[2023-06-03 14:01:26,544] INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
+[2023-06-03 14:01:56,442] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10203 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:01:56,451] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:02:26,580] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11733 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:02:26,582] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:02:56,713] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 9601 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:02:56,714] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:03:26,845] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11645 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:03:26,845] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:03:56,977] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 8837 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:03:56,978] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:04:27,109] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 9376 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:04:27,109] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:04:57,237] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10591 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:04:57,237] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:05:27,365] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 8678 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:05:27,367] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:05:57,490] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 8636 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:05:57,492] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:06:27,621] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10322 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:06:27,621] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:06:57,753] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11308 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:06:57,754] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:07:27,879] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11940 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:07:27,881] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:07:57,999] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11262 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:07:58,000] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:08:28,101] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 9888 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:08:28,103] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:08:58,233] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11887 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:08:58,234] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:09:28,365] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10975 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:09:28,366] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:09:58,477] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11725 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:09:58,479] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:10:28,585] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10615 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:10:28,586] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:10:58,702] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11984 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:10:58,704] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:11:28,833] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 8974 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:11:28,836] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:11:58,965] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 9462 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:11:58,966] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:12:29,088] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10546 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:12:29,090] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:12:59,221] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 8635 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:12:59,222] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:13:29,353] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 8211 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:13:29,354] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:13:59,485] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 8834 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:13:59,485] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:14:29,616] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10998 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:14:29,617] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:14:59,745] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10102 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:14:59,745] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:15:29,869] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11588 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:15:29,869] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:15:59,997] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 8985 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:15:59,997] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:16:30,125] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10436 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:16:30,126] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:17:00,255] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10317 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:17:00,257] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:17:30,385] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 9831 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:17:30,385] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:18:00,513] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11427 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:18:00,513] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:18:30,617] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10722 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:18:30,618] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:19:00,746] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11379 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:19:00,747] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:19:30,862] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11606 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:19:30,863] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:20:00,993] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11467 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:20:00,993] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:20:31,121] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11143 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:20:31,121] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:21:01,249] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10907 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:21:01,253] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:21:31,388] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10279 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:21:31,390] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:22:01,521] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 9269 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:22:01,522] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:22:31,649] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 8328 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:22:31,650] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:23:01,781] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 11732 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:23:01,785] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:23:31,917] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10300 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:23:31,917] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:24:02,053] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10159 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:24:02,058] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:24:32,185] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 9238 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:24:32,186] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:25:02,321] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 9727 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:25:02,322] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:25:32,453] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 10780 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:25:32,454] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:25:42,011] WARN Session 0x10000d991c20000 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+EndOfStreamException: Unable to read additional data from server sessionid 0x10000d991c20000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-06-03 14:25:44,030] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:25:44,031] WARN Session 0x10000d991c20000 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-06-03 14:25:45,299] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:45,301] INFO [KafkaServer id=0] shutting down (kafka.server.KafkaServer)
+[2023-06-03 14:25:45,304] INFO [KafkaServer id=0] Starting controlled shutdown (kafka.server.KafkaServer)
+[2023-06-03 14:25:45,318] INFO [KafkaServer id=0] No zk controller present in the metadata cache (kafka.server.KafkaServer)
+[2023-06-03 14:25:46,044] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:25:46,045] WARN Session 0x10000d991c20000 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-06-03 14:25:47,331] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:25:47,332] WARN Session 0x10000d991c20000 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-06-03 14:25:48,715] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:25:48,717] WARN Session 0x10000d991c20000 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-06-03 14:25:50,015] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:25:50,016] WARN Session 0x10000d991c20000 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-06-03 14:25:50,320] INFO [KafkaServer id=0] Retrying controlled shutdown (2 retries remaining) (kafka.server.KafkaServer)
+[2023-06-03 14:25:50,320] INFO [KafkaServer id=0] No zk controller present in the metadata cache (kafka.server.KafkaServer)
+[2023-06-03 14:25:50,510] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,011] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,040] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,071] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,100] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,138] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,161] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,192] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,223] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,255] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,285] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:51,486] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:25:51,487] WARN Session 0x10000d991c20000 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-06-03 14:25:51,935] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,435] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,465] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,494] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,523] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,555] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,584] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,616] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,647] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,677] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,709] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:52,813] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:25:52,814] WARN Session 0x10000d991c20000 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-06-03 14:25:53,682] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,184] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,212] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,243] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,272] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,303] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,332] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,363] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,393] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,423] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,452] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,483] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,515] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,546] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,571] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:25:54,573] WARN Session 0x10000d991c20000 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-06-03 14:25:54,576] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,607] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,639] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,673] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,698] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,728] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,759] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,789] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,820] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,852] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,882] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,912] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,941] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:54,973] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,001] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,032] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,063] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,094] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,124] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,155] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,186] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,217] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,247] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,277] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,308] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,321] INFO [KafkaServer id=0] Retrying controlled shutdown (1 retries remaining) (kafka.server.KafkaServer)
+[2023-06-03 14:25:55,321] INFO [KafkaServer id=0] No zk controller present in the metadata cache (kafka.server.KafkaServer)
+[2023-06-03 14:25:55,329] WARN [KafkaServer id=0] Proceeding to do an unclean shutdown as all the controlled shutdown attempts failed (kafka.server.KafkaServer)
+[2023-06-03 14:25:55,331] INFO [/config/changes-event-process-thread]: Shutting down (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2023-06-03 14:25:55,333] INFO [/config/changes-event-process-thread]: Stopped (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2023-06-03 14:25:55,333] INFO [/config/changes-event-process-thread]: Shutdown completed (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2023-06-03 14:25:55,335] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Stopping socket server request processors (kafka.network.SocketServer)
+[2023-06-03 14:25:55,337] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,353] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Stopped socket server request processors (kafka.network.SocketServer)
+[2023-06-03 14:25:55,354] INFO [data-plane Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2023-06-03 14:25:55,358] INFO [data-plane Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2023-06-03 14:25:55,369] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,371] INFO [ExpirationReaper-0-AlterAcls]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,374] INFO [ExpirationReaper-0-AlterAcls]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,374] INFO [ExpirationReaper-0-AlterAcls]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,375] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2023-06-03 14:25:55,377] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,378] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,378] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,381] INFO [TransactionCoordinator id=0] Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[2023-06-03 14:25:55,382] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[2023-06-03 14:25:55,382] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2023-06-03 14:25:55,383] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2023-06-03 14:25:55,383] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2023-06-03 14:25:55,384] INFO [TransactionCoordinator id=0] Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2023-06-03 14:25:55,385] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[2023-06-03 14:25:55,386] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,387] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,387] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,388] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,389] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,389] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,391] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[2023-06-03 14:25:55,393] INFO [ReplicaManager broker=0] Shutting down (kafka.server.ReplicaManager)
+[2023-06-03 14:25:55,394] INFO [LogDirFailureHandler]: Shutting down (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2023-06-03 14:25:55,395] INFO [LogDirFailureHandler]: Stopped (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2023-06-03 14:25:55,395] INFO [LogDirFailureHandler]: Shutdown completed (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2023-06-03 14:25:55,397] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2023-06-03 14:25:55,399] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,399] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2023-06-03 14:25:55,400] INFO [ReplicaAlterLogDirsManager on broker 0] shutting down (kafka.server.ReplicaAlterLogDirsManager)
+[2023-06-03 14:25:55,400] INFO [ReplicaAlterLogDirsManager on broker 0] shutdown completed (kafka.server.ReplicaAlterLogDirsManager)
+[2023-06-03 14:25:55,401] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,401] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,401] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,402] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,403] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,403] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,404] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,405] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,405] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,405] INFO [ExpirationReaper-0-ElectLeader]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,409] INFO [ExpirationReaper-0-ElectLeader]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,409] INFO [ExpirationReaper-0-ElectLeader]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-06-03 14:25:55,417] INFO [ReplicaManager broker=0] Shut down completely (kafka.server.ReplicaManager)
+[2023-06-03 14:25:55,418] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Shutting down (kafka.server.BrokerToControllerRequestThread)
+[2023-06-03 14:25:55,418] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Stopped (kafka.server.BrokerToControllerRequestThread)
+[2023-06-03 14:25:55,418] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Shutdown completed (kafka.server.BrokerToControllerRequestThread)
+[2023-06-03 14:25:55,422] INFO Broker to controller channel manager for alterPartition shutdown (kafka.server.BrokerToControllerChannelManagerImpl)
+[2023-06-03 14:25:55,423] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Shutting down (kafka.server.BrokerToControllerRequestThread)
+[2023-06-03 14:25:55,425] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Stopped (kafka.server.BrokerToControllerRequestThread)
+[2023-06-03 14:25:55,428] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Shutdown completed (kafka.server.BrokerToControllerRequestThread)
+[2023-06-03 14:25:55,429] INFO Broker to controller channel manager for forwarding shutdown (kafka.server.BrokerToControllerChannelManagerImpl)
+[2023-06-03 14:25:55,431] INFO Shutting down. (kafka.log.LogManager)
+[2023-06-03 14:25:55,435] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,459] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,490] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,514] INFO Shutdown complete. (kafka.log.LogManager)
+[2023-06-03 14:25:55,521] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,525] INFO [Controller id=0, targetBrokerId=0] Disconnecting from node 0 due to socket connection setup timeout. The timeout value is 9135 ms. (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:25:55,526] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:25:55,530] INFO [Controller id=0, targetBrokerId=0] Client requested connection close from node 0 (org.apache.kafka.clients.NetworkClient)
+[2023-06-03 14:25:55,535] INFO [feature-zk-node-event-process-thread]: Shutting down (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2023-06-03 14:25:55,535] INFO [feature-zk-node-event-process-thread]: Shutdown completed (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2023-06-03 14:25:55,535] INFO [feature-zk-node-event-process-thread]: Stopped (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2023-06-03 14:25:55,537] INFO [ZooKeeperClient Kafka server] Closing. (kafka.zookeeper.ZooKeeperClient)
+[2023-06-03 14:25:55,551] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,582] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,613] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,643] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,674] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,705] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,736] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,765] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,795] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,826] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,858] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,887] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,920] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,951] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:55,982] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,013] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,040] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,072] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,101] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,132] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,164] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,194] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,224] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,258] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,289] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,321] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,347] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:25:56,348] WARN An exception was thrown while closing send thread for session 0x10000d991c20000. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-06-03 14:25:56,351] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,376] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,407] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,438] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,453] INFO Session: 0x10000d991c20000 closed (org.apache.zookeeper.ZooKeeper)
+[2023-06-03 14:25:56,453] INFO EventThread shut down for session: 0x10000d991c20000 (org.apache.zookeeper.ClientCnxn)
+[2023-06-03 14:25:56,455] INFO [ZooKeeperClient Kafka server] Closed. (kafka.zookeeper.ZooKeeperClient)
+[2023-06-03 14:25:56,456] INFO [ThrottledChannelReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,459] INFO [ThrottledChannelReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,459] INFO [ThrottledChannelReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,459] INFO [ThrottledChannelReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,459] INFO [ThrottledChannelReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,459] INFO [ThrottledChannelReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,460] INFO [ThrottledChannelReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,460] INFO [ThrottledChannelReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,460] INFO [ThrottledChannelReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,460] INFO [ThrottledChannelReaper-ControllerMutation]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,460] INFO [ThrottledChannelReaper-ControllerMutation]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,460] INFO [ThrottledChannelReaper-ControllerMutation]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-06-03 14:25:56,463] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Shutting down socket server (kafka.network.SocketServer)
+[2023-06-03 14:25:56,468] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,497] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,527] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Shutdown completed (kafka.network.SocketServer)
+[2023-06-03 14:25:56,528] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-06-03 14:25:56,528] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics)
+[2023-06-03 14:25:56,528] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics)
+[2023-06-03 14:25:56,528] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics)
+[2023-06-03 14:25:56,531] INFO Broker and topic stats closed (kafka.server.BrokerTopicStats)
+[2023-06-03 14:25:56,531] INFO App info kafka.server for 0 unregistered (org.apache.kafka.common.utils.AppInfoParser)
+[2023-06-03 14:25:56,532] INFO [KafkaServer id=0] shut down completed (kafka.server.KafkaServer)
