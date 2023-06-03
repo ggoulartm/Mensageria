@@ -1,8 +1,11 @@
 # Diretrizes para cada etapa:
 
+
 ## Configuração do Kafka:
 
-Instalar e configurar um cluster do Kafka, que consiste em pelo menos um nó de broker. Criar os seguintes tópicos necessários para receber os eventos de telemetria veicular:
+Instalar e configurar um cluster do Kafka, que consiste em pelo menos um nó de broker. 
+
+Criar os seguintes tópicos necessários para receber os eventos de telemetria veicular:
 
     -Velocidade do veículo
 
@@ -22,17 +25,23 @@ Instalar e configurar um cluster do Kafka, que consiste em pelo menos um nó de 
 
 ## Aplicação de Publicação de Eventos:
 
-Desenvolver uma aplicação em Python para capturar e publicar eventos de telemetria veicular no Kafka.
+Desenvolver uma aplicação em Python para capturar e publicar eventos de telemetria veicular no Kafka. 
+
 Gerar informações de telemetria simulando um dispositivo de sensoriamento.
-Processar e estruture os dados em formato JSON, incluindo o tipo de informação, horário de criação do evento e valor relacionado ao evento.
+
+Processar e estruturar os dados em formato JSON, incluindo o tipo de informação, horário de criação do evento e valor relacionado ao evento.
+
 Publicar as mensagens nos tópicos específicos do Kafka, identificados de acordo com o tipo de evento.
 
 
 ## Aplicação de Consumo de Informações:
 
 Desenvolver uma aplicação em Python para consumir as informações de telemetria veicular do Kafka.
+
 Conectar-se ao cluster do Kafka e subscreva-se aos tópicos relevantes.
-Receba as mensagens de telemetria veicular do Kafka.
+
+Receber as mensagens de telemetria veicular do Kafka.
+
 Processar as mensagens de acordo com as necessidades do projeto, como análise, armazenamento ou exibição dos dados.
 
 
