@@ -32,7 +32,7 @@ def clear_topics():
 
 
 def console_producer(topic,event,value,time):
-	mssg="\"Evento\":\""+str(event)+"\",\n\t\"Valor\":"+str(value)+",\n\t\"Data-Hora\":\""+str(time)+"\""
+	mssg="\\\"Evento\\\":\\\""+str(event)+"\\\",\n\t\\\"Valor\\\":"+str(value)+",\n\t\\\"Data-Hora\\\":\\\""+str(time)+"\\\""
 	post="kafka/bin/kafka-console-producer.sh --topic "+ str(topic) +" --bootstrap-server localhost:9092"
 	os.system('echo "{\n\t' + mssg + '\n}," |'+post)
 	

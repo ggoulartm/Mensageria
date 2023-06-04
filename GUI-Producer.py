@@ -1,30 +1,29 @@
 from tkinter import *
 from datetime import datetime
 from Producer import *
-import os
 
-start_server()
+#start_server()
 
 def Publisher():
-    datahora=datetime.now().strftime('%d/%m/%Y %H:%M')
+    datahora=datetime.now().strftime('%d/%m/%Y %H:%M:%S')
     evento=str(lb_events.get(ACTIVE))
     valor=vValor.get()
     print("Evento: "+evento)
     print("Valor: "+valor)
     print("Horario: "+datahora)
     if evento == "Velocidade do veiculo":
-    	console_producer("velocidade",evento,valor,datahora)
+        console_producer("velocidade",evento,valor,datahora)
     elif evento == "RPM do motor":
-    	console_producer("rpm",evento,valor,datahora)
+        console_producer("rpm",evento,valor,datahora)
     elif evento == "Temperatura do motor":
-    	console_producer("temperatura",evento,valor,datahora)
+        console_producer("temperatura",evento,valor,datahora)
     elif evento == "Nivel de combustivel":
-    	console_producer("nivel-combustivel",evento,valor,datahora)
+        console_producer("nivel-combustivel",evento,valor,datahora)
     elif evento == "Localizacao GPS":
-    	console_producer("GPS",evento,valor,datahora)
+        console_producer("GPS",evento,valor,datahora)
     else:
-    	console_producer("status-luzes",evento,valor,datahora)
-    
+        console_producer("status-luzes",evento,valor,datahora)
+
 
 app = Tk()
 app.title("TMR Veicular")
