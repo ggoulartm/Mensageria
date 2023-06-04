@@ -3,7 +3,7 @@ from datetime import datetime
 from Producer import *
 import os
 
-#start_server()
+start_server()
 
 def Publisher():
     datahora=datetime.now().strftime('%d/%m/%Y %H:%M')
@@ -28,29 +28,41 @@ def Publisher():
 
 app = Tk()
 app.title("TMR Veicular")
-app.geometry("250x170")
-app.maxsize(250,170)
-app.minsize(250,170)
+app.geometry("250x130")
+app.resizable(0,0)
 
 vehicleEvents = ["Velocidade do veiculo","RPM do motor","Temperatura do motor","Nivel de combustivel","Localizacao GPS","Status das luzes"]
 Label(app,text="Evento:",background="#dde", foreground="#009",anchor=W).place(x=10,y=10,width=80,height=20)
 
-lb_events=Listbox(app,height=6)
+framelb=Frame(app)
+framelb.pack()
+
+
+lb_events=Listbox(framelb,width=20,height=3, font=("Arial",10))
+lb_events.pack(side="left",fill="y")
+
+scrollbar=Scrollbar(framelb)
+scrollbar.pack(side="right",fill="y")
+scrollbar.config(command=lb_events.yview)
+
+lb_events.config(yscrollcommand=scrollbar.set)
 
 for element in vehicleEvents:
 	lb_events.insert(END,element)
 
-lb_events.pack()
+framelb.place(x=70,y=10)
 
-Label(app,text="Valor",background="#dde", foreground="#009",anchor=W).place(x=10,y=100,width=60,height=20)
+
+
+Label(app,text="Valor:",background="#dde", foreground="#009",anchor=W).place(x=10,y=60,width=60,height=20)
 vValor=Entry(app)
-vValor.place(x=10,y=120,width=200,height=20)
+vValor.place(x=10,y=80,width=200,height=20)
 
 publicar=Button(app,text="Publicar",command=Publisher)
-publicar.place(x=100,y=145,width=50,height=20)
+publicar.place(x=70,y=105,width=50,height=20)
 
-clear=Button(app,text="limpar",command=clear_topics)
-clear.place(x=155,y=145,width=50,height=20)
+clear=Button(app,text="Limpar",command=clear_topics)
+clear.place(x=120,y=105,width=50,height=20)
 
 
 app.mainloop()

@@ -1,24 +1,7 @@
 from tkinter import *
 import os
 
-def console_consumer(topic):
-	os.subprocess.check_output("/kafka/bin/kafka-console-consumer.sh --topic "+topic+" --from-beginning --bootstrap-server localhost:9092")
-
-def listen():
-    evento=str(lb_events.get(ACTIVE))
-    if evento == "Velocidade do veiculo":
-    	console_consumer("velocidade")
-    elif evento == "RPM do motor":
-    	console_consumer("rpm")
-    elif evento == "Temperatura do motor":
-    	console_consumer("temperatura")
-    elif evento == "Nivel de combustivel":
-    	console_consumer("nivel-combustivel")
-    elif evento == "Localizacao GPS":
-    	console_consumer("GPS")
-    else:
-    	console_consumer("status-luzes")
-    
+   
 
 app = Tk()
 app.title("TMR Veicular - Cliente")
@@ -34,10 +17,6 @@ for element in vehicleEvents:
 
 lb_events.pack()
 
-
-functions = ["analise", "armazenamento", "exibicao"]
-
-lb_functions=Listbox(app,height = 3)
 
 for element in functions:
 	lb_functions.insert(END, element)
