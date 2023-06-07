@@ -1,8 +1,10 @@
 import os
+import subprocess
 import pandas as pd
 
 def console_consumer_all(topic) -> None:
-	os.system("kafka/bin/kafka-console-consumer.sh --topic "+topic+" --from-beginning --bootstrap-server localhost:9092 >> output/output"+topic+".json &")
+	consumidor=subprocess.Popen("kafka/bin/kafka-console-consumer.sh --topic "+topic+" --from-beginning --bootstrap-server localhost:9092 >> output/output"+topic+".json")
+	return consumidor.pid
 
 def listen_all():
 	console_consumer_all("velocidade")

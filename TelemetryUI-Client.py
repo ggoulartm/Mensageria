@@ -2,7 +2,7 @@ from tkinter import *
 from Consumer import *
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
-#listen_all()
+listen_all() #melhorar a situação do consumer para não duplicar as mensagens
 class TelemetryClient:
 	def __init__(self):
 		self.app = Tk()

@@ -2,7 +2,7 @@ from tkinter import *
 from datetime import datetime
 from Producer import *
 
-#start_server()
+
 
 def Publisher():
     datahora=datetime.now().strftime('%d/%m/%Y %H:%M:%S')
@@ -24,6 +24,9 @@ def Publisher():
     else:
         console_producer("status-luzes",evento,valor,datahora)
 
+def Sair():
+    os.system("kill -2 "+str(kafkaPID)+" "+str(zookeeperPID))
+    app.destroy()
 
 app = Tk()
 app.title("TMR Veicular")
@@ -51,17 +54,19 @@ for element in vehicleEvents:
 
 framelb.place(x=70,y=10)
 
-
-
 Label(app,text="Valor:",background="#dde", foreground="#009",anchor=W).place(x=10,y=60,width=60,height=20)
 vValor=Entry(app)
 vValor.place(x=10,y=80,width=200,height=20)
 
 publicar=Button(app,text="Publicar",command=Publisher)
-publicar.place(x=70,y=105,width=50,height=20)
+publicar.place(x=45,y=105,width=55,height=20)
 
 clear=Button(app,text="Limpar",command=clear_topics)
-clear.place(x=120,y=105,width=50,height=20)
+clear.place(x=105,y=105,width=55,height=20)
 
+getout=Button(app,text="Sair",command=Sair)
+getout.place(x=165,y=105,width=50,height=20)
+
+[kafkaPID,zookeeperPID] = start_server()
 
 app.mainloop()
