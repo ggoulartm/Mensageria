@@ -1,4 +1,5 @@
 import os
+import json
 
 def start_server():
 	from time import sleep
@@ -32,8 +33,14 @@ def clear_topics():
 
 
 def console_producer(topic,event,value,time):
-	mssg="\\\"Evento\\\":\\\""+str(event)+"\\\",\n\t\\\"Valor\\\":"+str(value)+",\n\t\\\"Data-Hora\\\":\\\""+str(time)+"\\\""
 	post="kafka/bin/kafka-console-producer.sh --topic "+ str(topic) +" --bootstrap-server localhost:9092"
-	os.system('echo "{\n\t' + mssg + '\n}," |'+post)
+	mssg={
+		"Evento":event,
+		"Valor":value,
+		"Data-Hora":time
+	}
+	mssg=json.dumps(mssg)
+	for chunk in json.JSONEncoder().iterencode(mssg):
+		os.system('echo '+ chunk +' |'+post)
 	
 
