@@ -34,7 +34,7 @@ def console_producer(topic,event,value,time):
 	post="kafka/bin/kafka-console-producer.sh --topic "+ str(topic) +" --bootstrap-server localhost:9092"
 	mssg={
 		"Evento":event,
-		"Valor":value,
+		"Valor":float(value),
 		"Data-Hora":time
 	}
 	mssg=json.dumps(mssg, indent=1)

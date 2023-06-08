@@ -1,9 +1,10 @@
 import os
 import subprocess
 import pandas as pd
+import json
 
 def console_consumer_all(topic) -> None:
-	consumidor=subprocess.Popen("kafka/bin/kafka-console-consumer.sh --topic "+topic+" --from-beginning --bootstrap-server localhost:9092 >> output/output"+topic+".json")
+	consumidor=subprocess.Popen("kafka/bin/kafka-console-consumer.sh --topic "+topic+" --from-beginning --bootstrap-server localhost:9092 > output/output"+topic+".json")
 	return consumidor.pid
 
 def listen_all():
@@ -44,9 +45,16 @@ def importJson():
 	console_consumer_all("nivel-combustivel")
 	console_consumer_all("GPS")
 	console_consumer_all("status-luzes")
-    	
+ 
+def processJson(topic):
+	with open('output'+topic+'.json') as user_file:
+		file_content=user_file.read()
+	arquivo=json.loads('['+file_content.strip().replace('}\n  ','},\n')+']')
+	arquivo=json.dumps(arquivo,indent=2)
+	return arquivo
+
 def analyze(topic):
-	df = pd.read_json("output/output"+topic+".json")
+	df = pd.read_json(processJson(topic))
 	return [df,df["Valor"].mean(),df["Valor"].max(),df["Valor"].min()]	
 
 

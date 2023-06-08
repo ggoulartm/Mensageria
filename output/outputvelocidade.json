@@ -1,35 +1,36 @@
-[{
-	"Evento":"Velocidade do veiculo",
-	"Valor":100,
-	"Data-Hora":"04/06/2023 18:24:38"
-},
 {
-	"Evento":"Velocidade do veiculo",
-	"Valor":120,
-	"Data-Hora":"04/06/2023 18:25:45"
-},
-{
-	"Evento":"Velocidade do veiculo",
-	"Valor":121,
-	"Data-Hora":"04/06/2023 18:25:53"
-},
-{
-	"Evento":"Velocidade do veiculo",
-	"Valor":122,
-	"Data-Hora":"04/06/2023 18:25:58"
-},
-{
-	"Evento":"Velocidade do veiculo",
-	"Valor":124,
-	"Data-Hora":"04/06/2023 18:26:30"
-},
-{
-	"Evento":"Velocidade do veiculo",
-	"Valor":110,
-	"Data-Hora":"04/06/2023 18:27:50"
-},
-{
-	"Evento":"Velocidade do veiculo",
-	"Valor":115,
-	"Data-Hora":"04/06/2023 18:28:11"
-}]
+    "Evento": "Velocidade do veiculo",
+    "Valor": "50",
+    "Data-Hora": "07/06/2023 20:53:05"
+   }
+   {
+    "Evento": "Velocidade do veiculo",
+    "Valor": "51",
+    "Data-Hora": "07/06/2023 20:53:19"
+   }
+   {
+    "Evento": "Velocidade do veiculo",
+    "Valor": "52",
+    "Data-Hora": "07/06/2023 20:53:25"
+   }
+   {
+    "Evento": "Velocidade do veiculo",
+    "Valor": "55",
+    "Data-Hora": "07/06/2023 20:53:32"
+   }
+   {
+    "Evento": "Velocidade do veiculo",
+    "Valor": "60",
+    "Data-Hora": "07/06/2023 20:53:41"
+   }
+   {
+    "Evento": "Velocidade do veiculo",
+    "Valor": "30",
+    "Data-Hora": "07/06/2023 20:53:51"
+   }
+   {
+    "Evento": "Velocidade do veiculo",
+    "Valor": "20",
+    "Data-Hora": "07/06/2023 20:53:57"
+   }
+   
