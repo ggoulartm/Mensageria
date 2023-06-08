@@ -43,23 +43,23 @@ class TelemetryClient:
 		self.label_avg.place(x=300,y=350)
 		self.label_min.place(x=300,y=370)
 
-		self.app.after(1000,self.updateLabel)
-		self.app.after(1000,self.getPlot)
+		self.app.after(500,self.updateLabel)
+		self.app.after(500,self.getPlot)
 		self.app.mainloop()
   
 	def getPlot(self):
 		#plotagens
 		listen_all()
 		exibicao(self.lb_events.get(ACTIVE))
-		self.graph=PhotoImage(file="figs/velocidade.png")
+		self.graph=PhotoImage(file="figs/"+topicToEvent(self.lb_events.get(ACTIVE))+".png")
 		self.label_graph.configure(image=self.graph)
-		self.app.after(1000,self.getPlot)
+		self.app.after(500,self.getPlot)
   
 	def updateLabel(self):
-		self.label_max.configure(text="Máximo:"+str(analyze("velocidade")[2]))
-		self.label_avg.configure(text="Médio:"+str(analyze("velocidade")[1]))
-		self.label_min.configure(text="Mínimo:"+str(analyze("velocidade")[3]))
-		self.app.after(1000,self.updateLabel)
+		self.label_max.configure(text="Máximo:"+str(analyze(topicToEvent(self.lb_events.get(ACTIVE)))[2]))
+		self.label_avg.configure(text="Médio:"+str(analyze(topicToEvent(self.lb_events.get(ACTIVE)))[1]))
+		self.label_min.configure(text="Mínimo:"+str(analyze(topicToEvent(self.lb_events.get(ACTIVE)))[3]))
+		self.app.after(500,self.updateLabel)
 
   
 TelemetryClient()
