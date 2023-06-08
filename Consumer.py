@@ -63,6 +63,6 @@ def analyze(topic):
 
 def exibicao(topic):
 	graph=analyze(topicToEvent(topic))[0]
-	graph=graph.plot(x="Data-Hora",y="Valor", kind="bar",rot=20)
-	graph.figure.set_size_inches(3,2)
-	graph.figure.savefig("figs/"+topicToEvent(topic)+".png",dpi=100)
+	graph=graph.plot(x="Data-Hora",y="Valor",rot=15)
+	graph.figure.set_size_inches(4,3)
+	graph.figure.savefig("figs/"+topicToEvent(topic)+".png",bbox_inches = 'tight',dpi=100)

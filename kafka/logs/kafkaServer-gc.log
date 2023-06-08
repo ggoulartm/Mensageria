@@ -228,3 +228,43 @@
 [2023-06-08T19:48:28.809-0300][gc,metaspace  ] GC(14) Metaspace: 46629K(49920K)->46629K(49920K) NonClass: 40514K(42240K)->40514K(42240K) Class: 6114K(7680K)->6114K(7680K)
 [2023-06-08T19:48:28.809-0300][gc            ] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 195M->150M(1024M) 22,964ms
 [2023-06-08T19:48:28.809-0300][gc,cpu        ] GC(14) User=0,08s Sys=0,00s Real=0,02s
+[2023-06-08T19:53:45.606-0300][gc,start      ] GC(15) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-06-08T19:53:45.606-0300][gc,task       ] GC(15) Using 4 workers of 4 for evacuation
+[2023-06-08T19:53:45.615-0300][gc,phases     ] GC(15)   Pre Evacuate Collection Set: 0,1ms
+[2023-06-08T19:53:45.615-0300][gc,phases     ] GC(15)   Evacuate Collection Set: 7,8ms
+[2023-06-08T19:53:45.615-0300][gc,phases     ] GC(15)   Post Evacuate Collection Set: 0,4ms
+[2023-06-08T19:53:45.615-0300][gc,phases     ] GC(15)   Other: 0,3ms
+[2023-06-08T19:53:45.615-0300][gc,heap       ] GC(15) Eden regions: 46->0(47)
+[2023-06-08T19:53:45.615-0300][gc,heap       ] GC(15) Survivor regions: 5->4(7)
+[2023-06-08T19:53:45.615-0300][gc,heap       ] GC(15) Old regions: 18->20
+[2023-06-08T19:53:45.615-0300][gc,heap       ] GC(15) Humongous regions: 129->129
+[2023-06-08T19:53:45.615-0300][gc,metaspace  ] GC(15) Metaspace: 46705K(50176K)->46705K(50176K) NonClass: 40590K(42496K)->40590K(42496K) Class: 6114K(7680K)->6114K(7680K)
+[2023-06-08T19:53:45.615-0300][gc            ] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 196M->150M(1024M) 8,746ms
+[2023-06-08T19:53:45.615-0300][gc,cpu        ] GC(15) User=0,02s Sys=0,00s Real=0,00s
+[2023-06-08T20:01:38.545-0300][gc,start      ] GC(16) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-06-08T20:01:38.545-0300][gc,task       ] GC(16) Using 4 workers of 4 for evacuation
+[2023-06-08T20:01:38.555-0300][gc,phases     ] GC(16)   Pre Evacuate Collection Set: 0,1ms
+[2023-06-08T20:01:38.555-0300][gc,phases     ] GC(16)   Evacuate Collection Set: 8,9ms
+[2023-06-08T20:01:38.555-0300][gc,phases     ] GC(16)   Post Evacuate Collection Set: 0,7ms
+[2023-06-08T20:01:38.555-0300][gc,phases     ] GC(16)   Other: 0,3ms
+[2023-06-08T20:01:38.555-0300][gc,heap       ] GC(16) Eden regions: 47->0(47)
+[2023-06-08T20:01:38.555-0300][gc,heap       ] GC(16) Survivor regions: 4->4(7)
+[2023-06-08T20:01:38.555-0300][gc,heap       ] GC(16) Old regions: 20->20
+[2023-06-08T20:01:38.555-0300][gc,heap       ] GC(16) Humongous regions: 129->129
+[2023-06-08T20:01:38.555-0300][gc,metaspace  ] GC(16) Metaspace: 46908K(50348K)->46908K(50348K) NonClass: 40793K(42668K)->40793K(42668K) Class: 6114K(7680K)->6114K(7680K)
+[2023-06-08T20:01:38.555-0300][gc            ] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 197M->150M(1024M) 10,242ms
+[2023-06-08T20:01:38.555-0300][gc,cpu        ] GC(16) User=0,03s Sys=0,00s Real=0,00s
+[2023-06-08T20:05:57.279-0300][gc,start      ] GC(17) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-06-08T20:05:57.279-0300][gc,task       ] GC(17) Using 4 workers of 4 for evacuation
+[2023-06-08T20:05:57.303-0300][gc,mmu        ] GC(17) MMU target violated: 21,0ms (20,0ms/21,0ms)
+[2023-06-08T20:05:57.304-0300][gc,phases     ] GC(17)   Pre Evacuate Collection Set: 0,1ms
+[2023-06-08T20:05:57.304-0300][gc,phases     ] GC(17)   Evacuate Collection Set: 23,1ms
+[2023-06-08T20:05:57.304-0300][gc,phases     ] GC(17)   Post Evacuate Collection Set: 1,0ms
+[2023-06-08T20:05:57.304-0300][gc,phases     ] GC(17)   Other: 0,8ms
+[2023-06-08T20:05:57.304-0300][gc,heap       ] GC(17) Eden regions: 47->0(46)
+[2023-06-08T20:05:57.304-0300][gc,heap       ] GC(17) Survivor regions: 4->5(7)
+[2023-06-08T20:05:57.304-0300][gc,heap       ] GC(17) Old regions: 20->20
+[2023-06-08T20:05:57.304-0300][gc,heap       ] GC(17) Humongous regions: 129->129
+[2023-06-08T20:05:57.304-0300][gc,metaspace  ] GC(17) Metaspace: 46956K(50348K)->46956K(50348K) NonClass: 40841K(42668K)->40841K(42668K) Class: 6114K(7680K)->6114K(7680K)
+[2023-06-08T20:05:57.304-0300][gc            ] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 197M->151M(1024M) 25,378ms
+[2023-06-08T20:05:57.304-0300][gc,cpu        ] GC(17) User=0,09s Sys=0,00s Real=0,03s
