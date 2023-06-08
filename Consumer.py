@@ -2,18 +2,21 @@ import os
 import subprocess
 import pandas as pd
 import json
+from time import sleep
 
 def console_consumer_all(topic) -> None:
-	consumidor=subprocess.Popen("kafka/bin/kafka-console-consumer.sh --topic "+topic+" --from-beginning --bootstrap-server localhost:9092 > output/output"+topic+".json")
+	consumidor=subprocess.Popen(["kafka/bin/kafka-console-consumer.sh","--topic",topic,"--from-beginning","--bootstrap-server","localhost:9092"], stdout="output/output"+topic+".json")
 	return consumidor.pid
 
 def listen_all():
-	console_consumer_all("velocidade")
-	console_consumer_all("rpm")
-	console_consumer_all("temperatura")
-	console_consumer_all("nivel-combustivel")
-	console_consumer_all("GPS")
-	console_consumer_all("status-luzes")
+	velPID=console_consumer_all("velocidade")
+	rpmPID=console_consumer_all("rpm")
+	tempPID=console_consumer_all("temperatura")
+	nCombPID=console_consumer_all("nivel-combustivel")
+	gpsPID=console_consumer_all("GPS")
+	statusluzesPID=console_consumer_all("status-luzes")
+	sleep(30)
+	os.system("kill -2 "+str(velPID)+" "+str(rpmPID)+" "+str(tempPID)+" "+str(nCombPID)+" "+str(gpsPID)+" "+str(statusluzesPID))
 
 def console_consumer(topic):
 	os.system("kafka/bin/kafka-console-consumer.sh --topic "+topic+" --bootstrap-server localhost:9092")
