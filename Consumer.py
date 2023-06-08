@@ -5,7 +5,8 @@ import json
 from time import sleep
 
 def console_consumer_all(topic) -> None:
-	consumidor=subprocess.Popen(["kafka/bin/kafka-console-consumer.sh","--topic",topic,"--from-beginning","--bootstrap-server","localhost:9092"], stdout="output/output"+topic+".json")
+	output=open("output/output"+topic+".json",'w')
+	consumidor=subprocess.Popen(["kafka/bin/kafka-console-consumer.sh","--topic",topic,"--from-beginning","--bootstrap-server","localhost:9092"], stdout=output)
 	return consumidor.pid
 
 def listen_all():
@@ -39,7 +40,6 @@ def topicToEvent(topic):
 def listen(evento):
     #evento=str(lb_events.get(ACTIVE))
     console_consumer(topicToEvent(evento))
-
     	
 def importJson():
 	console_consumer_all("velocidade")
@@ -50,9 +50,9 @@ def importJson():
 	console_consumer_all("status-luzes")
  
 def processJson(topic):
-	with open('output'+topic+'.json') as user_file:
+	with open('output/output'+topic+'.json') as user_file:
 		file_content=user_file.read()
-	arquivo=json.loads('['+file_content.strip().replace('}\n  ','},\n')+']')
+	arquivo=json.loads('['+file_content.strip().replace('}\n{','},\n{')+']')
 	arquivo=json.dumps(arquivo,indent=2)
 	return arquivo
 
@@ -62,4 +62,7 @@ def analyze(topic):
 
 
 def exibicao(topic):
-	analyze(topicToEvent(topic))[0].plot(x="Data-Hora",y="Valor", kind="bar",rot=20).savefig("/figs/"+topic+".png")
+	graph=analyze(topicToEvent(topic))[0]
+	graph=graph.plot(x="Data-Hora",y="Valor", kind="bar",rot=20)
+	graph.figure.set_size_inches(3,2)
+	graph.figure.savefig("figs/"+topicToEvent(topic)+".png",dpi=100)
