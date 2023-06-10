@@ -16,7 +16,7 @@ def listen_all():
 	nCombPID=console_consumer_all("nivel-combustivel")
 	gpsPID=console_consumer_all("GPS")
 	statusluzesPID=console_consumer_all("status-luzes")
-	sleep(30)
+	sleep(5)
 	os.system("kill -2 "+str(velPID)+" "+str(rpmPID)+" "+str(tempPID)+" "+str(nCombPID)+" "+str(gpsPID)+" "+str(statusluzesPID))
 
 def console_consumer(topic):
