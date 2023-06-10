@@ -29,11 +29,6 @@ class TelemetryClient:
 			self.lb_events.insert(END,element)
 		self.framelb.place(x=100,y=330)
   
-		#self.Importar=Button(self.app,text="Atualizar",command=self.getPlot)
-		#self.Importar.place(x=10,y=330,width=50,height=20)
-		
-  		#media,max,min
-		#analyze(self.lb_events.get(ACTIVE))
 		
 		self.label_max=Label(self.app,text="Máximo:")
 		self.label_avg=Label(self.app,text="Médio:")

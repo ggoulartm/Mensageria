@@ -3,6 +3,7 @@ import subprocess
 import pandas as pd
 import json
 from time import sleep
+from datetime import datetime
 
 def console_consumer_all(topic) -> None:
 	output=open("output/output"+topic+".json",'w')
@@ -16,7 +17,7 @@ def listen_all():
 	nCombPID=console_consumer_all("nivel-combustivel")
 	gpsPID=console_consumer_all("GPS")
 	statusluzesPID=console_consumer_all("status-luzes")
-	sleep(5)
+	sleep(10)
 	os.system("kill -2 "+str(velPID)+" "+str(rpmPID)+" "+str(tempPID)+" "+str(nCombPID)+" "+str(gpsPID)+" "+str(statusluzesPID))
 
 def console_consumer(topic):
@@ -36,18 +37,6 @@ def topicToEvent(topic):
 	else:
 		event="status-luzes"
 	return event
-
-def listen(evento):
-    #evento=str(lb_events.get(ACTIVE))
-    console_consumer(topicToEvent(evento))
-    	
-def importJson():
-	console_consumer_all("velocidade")
-	console_consumer_all("rpm")
-	console_consumer_all("temperatura")
-	console_consumer_all("nivel-combustivel")
-	console_consumer_all("GPS")
-	console_consumer_all("status-luzes")
  
 def processJson(topic):
 	with open('output/output'+topic+'.json') as user_file:
@@ -58,6 +47,11 @@ def processJson(topic):
 
 def analyze(topic):
 	df = pd.read_json(processJson(topic))
+	try:
+		df["Valor"].mean()
+	except:
+		d={'Evento':["nenhum"], "Valor": [0], 'Data-Hora': datetime.now().strftime('%d/%m/%Y %H:%M:%S')}
+		df=pd.DataFrame(data=d)
 	return [df,df["Valor"].mean(),df["Valor"].max(),df["Valor"].min()]	
 
 

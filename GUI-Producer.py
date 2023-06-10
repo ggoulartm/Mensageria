@@ -25,7 +25,8 @@ def Publisher():
         console_producer("status-luzes",evento,valor,datahora)
 
 def Sair():
-    os.system("kill -2 "+str(kafkaPID)+" "+str(zookeeperPID))
+    os.system("kafka/bin/kafka-server-stop.sh")
+    os.system("kafka/bin/zookeeper-server-stop.sh")
     app.destroy()
 
 app = Tk()

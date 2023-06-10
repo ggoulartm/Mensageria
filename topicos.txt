@@ -1,0 +1,7 @@
+GPS
+nivel-combustivel
+quilometragem
+rpm
+status-luzes
+temperatura
+velocidade
