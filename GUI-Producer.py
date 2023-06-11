@@ -27,6 +27,7 @@ def Publisher():
 def Sair():
     os.system("kafka/bin/kafka-server-stop.sh")
     os.system("kafka/bin/zookeeper-server-stop.sh")
+    os.system("rm -rf /tmp/kafka-logs /tmp/zookeeper")
     app.destroy()
 
 app = Tk()

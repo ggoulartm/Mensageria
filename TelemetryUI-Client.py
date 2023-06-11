@@ -44,7 +44,6 @@ class TelemetryClient:
   
 	def getPlot(self):
 		#plotagens
-		listen_all()
 		exibicao(self.lb_events.get(ACTIVE))
 		self.graph=PhotoImage(file="figs/"+topicToEvent(self.lb_events.get(ACTIVE))+".png")
 		self.label_graph.configure(image=self.graph)

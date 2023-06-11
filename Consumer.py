@@ -11,14 +11,12 @@ def console_consumer_all(topic) -> None:
 	return consumidor.pid
 
 def listen_all():
-	velPID=console_consumer_all("velocidade")
-	rpmPID=console_consumer_all("rpm")
-	tempPID=console_consumer_all("temperatura")
-	nCombPID=console_consumer_all("nivel-combustivel")
-	gpsPID=console_consumer_all("GPS")
-	statusluzesPID=console_consumer_all("status-luzes")
-	sleep(10)
-	os.system("kill -2 "+str(velPID)+" "+str(rpmPID)+" "+str(tempPID)+" "+str(nCombPID)+" "+str(gpsPID)+" "+str(statusluzesPID))
+	console_consumer_all("velocidade")
+	console_consumer_all("rpm")
+	console_consumer_all("temperatura")
+	console_consumer_all("nivel-combustivel")
+	console_consumer_all("GPS")
+	console_consumer_all("status-luzes")
 
 def console_consumer(topic):
 	os.system("kafka/bin/kafka-console-consumer.sh --topic "+topic+" --bootstrap-server localhost:9092")
